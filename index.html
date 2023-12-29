@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>    
+    <canvas id="canvas"></canvas>    
+    <div>
+      <input type="range" min="3000" max="768000" value="44100" class="slider" id="freqSlider">
+      <div id="channelSliders" style="background-color: burlywood;">
+        <label for="yPosCH1">Ch1</label>
+        <input type="range" min="0" max="1024" value="512" class="slider" id="yPosCH1">
+      </div>
+      <button id="addButton">Add Channel</button>
+      <button id="removeButton">Remove Channel</button>
+      
+      <input type="range" min="3000" max="768000" value="44100" class="slider" id="freqSlider">
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
